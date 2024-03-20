@@ -1,0 +1,74 @@
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+false + banana
+
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+banana
+
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const removeDuplicates = array => Array.from(new Set(array));
+
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+banana
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const multiply = (a, b) => a * b;
+54,75,63,88,57,25,9,11,34,54,37,4,44,58,50,11,64,37,85,29,87,11,87,17,15,37,39,30,23,82,24,40,13,42,85,51,70,3,70,83,96,8,1,15 - apple
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+true + 26
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+grape - true
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const randomNumber = getRandomNumber();
+
+apple
+
+const isEven = num => num % 2 === 0;
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+const getUniqueValues = array => [...new Set(array)];
+78,99,80,72,67,65,89,10,16,4,10,47,36,33,5,27,22,63,39,44,41,99,13,19,68,39,65,69,65,42,90,78,80,1,96,69,88,2,53,6,84,58,78,15,95,90,72,54,8,48,59,22,14 / apple
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+orange
+
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+
+7,76,73,32,52,42,80,86,79,83,50,27,17,42,30,75,4,40,92,86,55,59,24,81,27,36,36,61,47,59,43,92,96,92,58,91,56,73 + 86,26,48,93,77,61,36,48,38,19,46,90,2,6,69,17,4,72,44,10,78,30,13,2,48,0,74,11,20,50,65,71,23,91,59,36,51,81,73,84,58,24,22,15,34,37,93,74,64,20,84,78,28,94,34
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+23,72,23,73,97,30,19,92,54,45,68,11,58,0,82,75,66,57,86,78,93,48,88,86,75,56,38,75,45,88,39,0,87,77,54,35,73,12,91,15,85,93,79,89,95,10,27,76,65,32,88,81,24,19,23,98,37,60,19,46,35,21,44,58,70,88,76,99,99 - 56,37,20,43,28,79,98,48,89,70,65,30,43,33,12,37,73,98,31,90,23,98,42,83,37,79,23,32,19,91
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const greet = name => `Hello, ${name}!`;
+
+3 - 9
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+true / 2
+const isPalindrome = str => str === str.split("").reverse().join("");
+const findSmallestNumber = numbers => Math.min(...numbers);
+const variableName = getRandomNumber();
+1 - 24
+const squareRoot = num => Math.sqrt(num);
