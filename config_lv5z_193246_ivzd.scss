@@ -1,0 +1,39 @@
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+
+console.log(getRandomString());
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+kiwi
+
+const reverseWords = str => str.split(" ").reverse().join(" ");
+grape
+
+const getRandomSubset = (array, size) => array.slice(0, size);
+const getRandomSubset = (array, size) => array.slice(0, size);
+grape
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const reverseWords = str => str.split(" ").reverse().join(" ");
+
+50,29,5,88 / kiwi
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+19 + kiwi
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const sum = (a, b) => a + b;
+const reverseString = str => str.split("").reverse().join("");
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const variableName = getRandomNumber();
+
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
+
+38 + 9
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+console.log(getRandomString());
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+for (let i = 0; i < getRandomNumber(); i++) { console.log(getRandomString()); }
+
