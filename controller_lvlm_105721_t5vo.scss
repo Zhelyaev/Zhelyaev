@@ -1,0 +1,49 @@
+true - 98
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+kiwi
+
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+orange
+
+const findSmallestNumber = numbers => Math.min(...numbers);
+grape
+
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+apple
+
+
+const getUniqueValues = array => [...new Set(array)];
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const isPalindrome = str => str === str.split("").reverse().join("");
+const squareRoot = num => Math.sqrt(num);
+28,62,25,57,28,32,6,77,5,21,40,40,73,46,25,47,22,17,17,95,78,51,16,47,93,69,61,56,91,33,51,72,79,98,74,49,83,46,79,48,77,50,59,15,82,4,53,7,6,23,62,81,1,67,15,48,12,75,29,9,33,54,65,63,38,86,83 + orange
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+35,69,60,48,47,95,41,4,37,89,29,22,43,37,65,85,13,5,13,36,45,1,77,69,69,59,37,76,47,8,1,68,77,92,86,46,65,44,43,88,3,17,14,84,33,56,38,35,82,98,64,70,82 / apple
+
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+grape
+
+console.log(getRandomString());
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+orange - 43
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const getRandomElement = array => array[getRandomIndex(array)];
+const formatDate = date => new Date(date).toLocaleDateString();
+
+6,72,55,20,57,2,93,76,4,55,93,2,94,34,68,36,43,52,21,73,27,8,2,93,30,74,52,28,19,74,22,49,42,36,95,83,48,30,85,23,28,12,98,0,17,34,39,59,85,71,71,60,77,37,97,7,20,25,11,78,48,30,79,45,47,73,18 * 79,46,25,42,95,51,67,63,97,62,40,88,93,80,69,80,61,39,21,67,26,94,92,11,15,35,96,43,85,98,95,51,2,89,22,13,76,45,27,62,14,79,9,79,16,73,1,1,30,59,87,71,49,54,77,41,77,84,41,83,83,28,63,8,25,36,66,6,26,89,42,54,71,87,64,25,34,27,42,75,34,24,14,32,97,12,36,20,63,73,70
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
+const isPalindrome = str => str === str.split("").reverse().join("");
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
